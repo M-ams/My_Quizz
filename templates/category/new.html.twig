@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle Categorie
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/crud.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<p>Créez une nouvelle categorie</p>
+
+			<div class="btn">
+				{{ include('category/_form.html.twig') }}
+			</div>
+			<a href="{{ path('app_main') }}"></div>
+		</div>
+
+	{% endblock %}

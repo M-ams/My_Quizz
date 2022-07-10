@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/reponse.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			{% if score == null %}
+
+				<p>
+					Votre score est de 0/10</p>
+			{% else %}
+				<p>
+					Votre score est de
+					{{score}}/10</p>
+
+			{% endif %}
+
+			{% for verify in verify %}
+
+
+				<p>Question
+					{{loop.index}}
+					:
+					{{ verify }}</p>
+
+
+			{% endfor %}
+
+			<p>Votre score a été envoyé par mail.</p>
+			<div class="btn">
+				<a href="{{ path('app_main') }}">
+					<button type="submit" class="bouton">Quitter</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

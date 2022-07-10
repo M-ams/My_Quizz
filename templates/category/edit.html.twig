@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editer une categorie
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/crud.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="container">
+			<h1>Editer une categorie</h1>
+			{{ include('category/_form.html.twig', {'button_label': 'Update'}) }}
+
+			<a href="{{ path('app_main') }}">Retour a l'acceuil</a>
+
+			{# {{ include('category/_delete_form.html.twig') }} #}
+		</div>
+	</div>
+{% endblock %}

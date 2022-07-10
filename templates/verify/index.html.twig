@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/reponse.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+{% block title %}Verification email
+{% endblock %}
+
+{% block body %}
+	<div class="head">
+
+		<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<p style="color: rgb(143, 36, 127)">
+				Veuillez confirmer votre email !
+			</p>
+		</div>
+	</div>
+{% endblock %}

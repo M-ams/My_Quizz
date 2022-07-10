@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/reponse.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block title %}Category index
+{% endblock %}
+
+{% block body %}
+
+
+	{# {{ form_start(form,{action:path('app_category_index', {'id': 1,'idq': routeParamsUpdate})}) }} #}
+
+
+	<tbody>
+		<div class="head">
+			<a href="{{ path('app_main') }}">
+				<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+		</div>
+		<div class="wrapper">
+			<div class="container">
+				<div class="title">
+					<p>{{ categories[0].name }}</p>
+
+
+				</div>
+
+
+				<div class="question_form">
+					<p>{{ questions[routeParams.idq].question }}</p>
+				</div>
+
+				{% set nameanswer = ["A. ","B. ","C. "] %}
+
+				{% for reponse in reponses[routeParams.idq] %}
+					<div class="reponse_form">
+						<div class="reponse_form_container">
+
+							<p>{{nameanswer[loop.index0]}}
+								<label>{{ reponse.reponse }}</label>
+							</p>
+
+						</div>
+					</div>
+				{% endfor %}
+	
+				{{ form_start(form,{action:path('app_reponse', {'id': routeParams.id,'idq': routeParams.idq})}) }}
+
+				{{ form_row(form._token) }}
+				<div class="test">
+					{{ form_row(form.Reponse) }}
+				</div>
+				<div class="btn">
+					{{ form_widget(form.save, { 'label': 'Confirmer' })}}
+				</div>
+				{{ form_end(form) }}
+
+
+				{# {% if routeParams.idq == 9 %}
+																																					<button class="bouton" type="submit">
+																																						Finir
+																																					</button>
+																																				{% else %}
+																																
+																																					<button class="bouton" type="submit">
+																																						Suivant
+																																					</button>
+																																
+																																				{% endif %} #}
+
+
+			</div>
+		</div>
+	</tbody>
+
+
+{% endblock %}

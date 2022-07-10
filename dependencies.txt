@@ -1,0 +1,103 @@
+doctrine/annotations                1.13.2  Docblock Annotations Parser
+doctrine/cache                      2.1.1   PHP Doctrine Cache library is a popular cache implementation that supports many different drivers suc...
+doctrine/collections                1.6.8   PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.
+doctrine/common                     3.3.0   PHP Doctrine Common project is a library that provides additional functionality that other Doctrine p...
+doctrine/dbal                       3.3.6   Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection a...
+doctrine/deprecations               v0.5.3  A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all...
+doctrine/doctrine-bundle            2.6.3   Symfony DoctrineBundle
+doctrine/doctrine-migrations-bundle 3.2.2   Symfony DoctrineMigrationsBundle
+doctrine/event-manager              1.1.1   The Doctrine Event Manager is a simple PHP event system that was built to be used with the various Do...
+doctrine/inflector                  2.0.4   PHP Doctrine Inflector is a small library that can perform string manipulations with regard to upper/...
+doctrine/instantiator               1.4.1   A small, lightweight utility to instantiate objects in PHP without invoking their constructors
+doctrine/lexer                      1.2.3   PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.
+doctrine/migrations                 3.5.0   PHP Doctrine Migrations project offer additional functionality on top of the database abstraction lay...
+doctrine/orm                        2.12.2  Object-Relational-Mapper for PHP
+doctrine/persistence                3.0.2   The Doctrine Persistence project is a set of shared interfaces and functionality that the different D...
+doctrine/sql-formatter              1.1.2   a PHP SQL highlighting library
+easycorp/easyadmin-bundle           v4.1.2  Admin generator for Symfony applications
+egulias/email-validator             3.1.2   A library for validating emails against several RFCs
+friendsofphp/proxy-manager-lts      v1.0.12 Adding support for a wider range of PHP versions to ocramius/proxy-manager
+laminas/laminas-code                4.5.1   Extensions to the PHP Reflection API, static code scanning, and code generation
+monolog/monolog                     2.5.0   Sends your logs to files, sockets, inboxes, databases and various web services
+nikic/php-parser                    v4.13.2 A PHP parser written in PHP
+phpdocumentor/reflection-common     2.2.0   Common reflection classes used by phpdocumentor to reflect the code structure
+phpdocumentor/reflection-docblock   5.3.0   With this component, a library can provide support for annotations via DocBlocks or otherwise retriev...
+phpdocumentor/type-resolver         1.6.1   A PSR-5 based resolver of Class names, Types and Structural Element Names
+phpstan/phpdoc-parser               1.5.1   PHPDoc parser with support for nullable, intersection and generic types
+psr/cache                           3.0.0   Common interface for caching libraries
+psr/container                       2.0.2   Common Container Interface (PHP FIG PSR-11)
+psr/event-dispatcher                1.0.0   Standard interfaces for event handling.
+psr/link                            2.0.1   Common interfaces for HTTP links
+psr/log                             3.0.0   Common interface for logging libraries
+sensio/framework-extra-bundle       v6.2.6  This bundle provides a way to configure your controllers with annotations
+symfony/asset                       v6.0.7  Manages URL generation and versioning of web assets such as CSS stylesheets, JavaScript files and ima...
+symfony/cache                       v6.0.8  Provides an extended PSR-6, PSR-16 (and tags) implementation
+symfony/cache-contracts             v3.0.1  Generic abstractions related to caching
+symfony/config                      v6.0.8  Helps you find, load, combine, autofill and validate configuration values of any kind
+symfony/console                     v6.0.8  Eases the creation of beautiful and testable command line interfaces
+symfony/debug-bundle                v6.0.3  Provides a tight integration of the Symfony VarDumper component and the ServerLogCommand from Monolog...
+symfony/dependency-injection        v6.0.8  Allows you to standardize and centralize the way objects are constructed in your application
+symfony/deprecation-contracts       v3.0.1  A generic function and convention to trigger deprecation notices
+symfony/doctrine-bridge             v6.0.8  Provides integration for Doctrine with various Symfony components
+symfony/doctrine-messenger          v6.0.8  Symfony Doctrine Messenger Bridge
+symfony/dotenv                      v6.0.5  Registers environment variables from a .env file
+symfony/error-handler               v6.0.8  Provides tools to manage errors and ease debugging PHP code
+symfony/event-dispatcher            v6.0.3  Provides tools that allow your application components to communicate with each other by dispatching e...
+symfony/event-dispatcher-contracts  v3.0.1  Generic abstractions related to dispatching event
+symfony/expression-language         v6.0.8  Provides an engine that can compile and evaluate expressions
+symfony/filesystem                  v6.0.7  Provides basic utilities for the filesystem
+symfony/finder                      v6.0.8  Finds files and directories via an intuitive fluent interface
+symfony/flex                        v2.1.8  Composer plugin for Symfony
+symfony/form                        v6.0.8  Allows to easily create, process and reuse HTML forms
+symfony/framework-bundle            v6.0.8  Provides a tight integration between Symfony components and the Symfony full-stack framework
+symfony/http-client                 v6.0.8  Provides powerful methods to fetch HTTP resources synchronously or asynchronously
+symfony/http-client-contracts       v3.0.1  Generic abstractions related to HTTP clients
+symfony/http-foundation             v6.0.8  Defines an object-oriented layer for the HTTP specification
+symfony/http-kernel                 v6.0.8  Provides a structured process for converting a Request into a Response
+symfony/intl                        v6.0.8  Provides a PHP replacement layer for the C intl extension that includes additional data from the ICU ...
+symfony/mailer                      v6.0.8  Helps sending emails
+symfony/maker-bundle                v1.41.0 Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can f...
+symfony/messenger                   v6.0.8  Helps applications send and receive messages to/from other applications or via message queues
+symfony/mime                        v6.0.8  Allows manipulating MIME messages
+symfony/monolog-bridge              v6.0.3  Provides integration for Monolog with various Symfony components
+symfony/monolog-bundle              v3.7.1  Symfony MonologBundle
+symfony/notifier                    v6.0.8  Sends notifications via one or more channels (email, SMS, ...)
+symfony/options-resolver            v6.0.3  Provides an improved replacement for the array_replace PHP function
+symfony/password-hasher             v6.0.8  Provides password hashing utilities
+symfony/polyfill-intl-grapheme      v1.25.0 Symfony polyfill for intl's grapheme_* functions
+symfony/polyfill-intl-icu           v1.25.0 Symfony polyfill for intl's ICU-related data and classes
+symfony/polyfill-intl-idn           v1.25.0 Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions
+symfony/polyfill-intl-normalizer    v1.25.0 Symfony polyfill for intl's Normalizer class and related functions
+symfony/polyfill-mbstring           v1.25.0 Symfony polyfill for the Mbstring extension
+symfony/polyfill-php81              v1.25.0 Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions
+symfony/polyfill-uuid               v1.25.0 Symfony polyfill for uuid functions
+symfony/process                     v6.0.8  Executes commands in sub-processes
+symfony/property-access             v6.0.8  Provides functions to read and write from/to an object or array using a simple string notation
+symfony/property-info               v6.0.7  Extracts information about PHP class' properties using metadata of popular sources
+symfony/proxy-manager-bridge        v6.0.6  Provides integration for ProxyManager with various Symfony components
+symfony/routing                     v6.0.8  Maps an HTTP request to a set of configuration variables
+symfony/runtime                     v6.0.8  Enables decoupling PHP applications from global state
+symfony/security-bundle             v6.0.8  Provides a tight integration of the Security component into the Symfony full-stack framework
+symfony/security-core               v6.0.8  Symfony Security Component - Core Library
+symfony/security-csrf               v6.0.3  Symfony Security Component - CSRF Library
+symfony/security-http               v6.0.8  Symfony Security Component - HTTP Integration
+symfony/serializer                  v6.0.8  Handles serializing and deserializing data structures, including object graphs, into array structures...
+symfony/service-contracts           v3.0.1  Generic abstractions related to writing services
+symfony/stopwatch                   v6.0.5  Provides a way to profile code
+symfony/string                      v6.0.8  Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clust...
+symfony/translation                 v6.0.8  Provides tools to internationalize your application
+symfony/translation-contracts       v3.0.1  Generic abstractions related to translation
+symfony/twig-bridge                 v6.0.8  Provides integration for Twig with various Symfony components
+symfony/twig-bundle                 v6.0.8  Provides a tight integration of Twig into the Symfony full-stack framework
+symfony/uid                         v6.0.3  Provides an object-oriented API to generate and represent UIDs
+symfony/validator                   v6.0.8  Provides tools to validate values
+symfony/var-dumper                  v6.0.8  Provides mechanisms for walking through any arbitrary PHP variable
+symfony/var-exporter                v6.0.8  Allows exporting any serializable PHP data structure to plain PHP code
+symfony/web-link                    v6.0.3  Manages links between resources
+symfony/web-profiler-bundle         v6.0.8  Provides a development tool that gives detailed information about the execution of any request
+symfony/webapp-meta                 v1.0.0  A meta package for the web app pack
+symfony/yaml                        v6.0.3  Loads and dumps YAML files
+symfonycasts/verify-email-bundle    v1.10.0 Simple, stylish Email Verification for Symfony
+twig/extra-bundle                   v3.3.8  A Symfony bundle for extra Twig extensions
+twig/twig                           v3.3.10 Twig, the flexible, fast, and secure template language for PHP
+webmozart/assert                    1.10.0  Assertions to validate method input/output with nice error messages.

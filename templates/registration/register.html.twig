@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/form.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block title %}Inscription
+{% endblock %}
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}"><img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+
+	<div class="wrapper">
+		<div class="container">
+			<form method="post">
+
+				<h1>Inscrivez-vous</h1>
+
+				<div class="input">
+
+					{{ form_start(registrationForm)  }}
+					{{ form_row(registrationForm.email) }}
+
+					{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+					}) }}
+					{{ form_row(registrationForm.agreeTerms) }}
+				</div>
+
+				<div class="btn">
+					<button type="submit" class="bouton">S'inscrire</button>
+					{{ form_end(registrationForm) }}
+				</div>
+
+			</div>
+		</div>
+	</div>
+{% endblock %}

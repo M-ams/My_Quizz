@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle question
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/crud.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<h1>Créez une nouvelle question</h1>
+
+			{{ include('question/_form.html.twig') }}
+
+			<a href="{{ path('app_main') }}">Retour à l'acceuil</a>
+		</div>
+	</div>
+{% endblock %}

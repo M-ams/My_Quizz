@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/history.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+
+{% block body %}
+
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+
+	<body>
+		<div
+			class="all_history">
+
+			{# {% for categoryname in categoryname %} #}
+
+
+			{% for history in history %}
+				<div class="wrapper">
+					<div class="container">
+						<h1>{{ categoryname[loop.index0] }}</h1>
+
+
+						{% if history.Q1 == 0 %}
+							<p>Question 01 : Faux</p>
+						{% else %}
+							<p>Question 01 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q2 == 0 %}
+							<p>Question 02 : Faux</p>
+						{% else %}
+							<p>Question 02 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q3 == 0 %}
+							<p>Question 03 : Faux</p>
+						{% else %}
+							<p>Question 03 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q4 == 0 %}
+							<p>Question 04 : Faux</p>
+						{% else %}
+							<p>Question 04 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q5 == 0 %}
+							<p>Question 05 : Faux</p>
+						{% else %}
+							<p>Question 05 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q6 == 0 %}
+							<p>Question 06 : Faux</p>
+						{% else %}
+							<p>Question 06 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q7 == 0 %}
+							<p>Question 07 : Faux</p>
+						{% else %}
+							<p>Question 07 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q8 == 0 %}
+							<p>Question 08 : Faux</p>
+						{% else %}
+							<p>Question 08 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q9 == 0 %}
+							<p>Question 09 : Faux</p>
+						{% else %}
+							<p>Question 09 : Vrai</p>
+						{% endif %}
+
+						{% if history.Q10 == 0 %}
+							<p>Question 10 : Faux</p>
+						{% else %}
+							<p>Question 10 : Vrai</p>
+						{% endif %}
+
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="endpage">
+			<div class="btn">
+				<a href="{{path('app_main')}}">
+					<button type="submit" class="bouton">Quitter</button>
+				</a>
+			</div>
+		</div>
+	</body>
+{% endblock body %}

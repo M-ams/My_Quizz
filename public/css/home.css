@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  background-color: rgb(160, 209, 220);
+}
+
+.head {
+  text-align: center;
+  margin: auto;
+}
+
+.homeimg {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 25%;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  max-width: 800px;
+  width: 95%;
+  font: 18px/1.5 sans-serif;
+}
+.wrapper code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+}
+
+.container {
+  display: flex;
+  padding: 1.5vw;
+}
+
+nav {
+  /* margin: auto; */
+  margin-bottom: 5px;
+}
+
+.nav_connect {
+  /* color: black; */
+  margin: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.nav_connect a:hover {
+  background-color: rgb(160, 36, 129);
+  color: white;
+}
+
+.nav_connect a {
+  color: rgb(143, 36, 127);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.nav_connect p {
+  color: black;
+}
+
+.nav_title {
+  background-color: rgb(143, 36, 127);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: white;
+  font-size: 22px;
+}
+
+.nav_title p {
+  margin: 0;
+  margin-left: 14px;
+}
+
+.nav_categories {
+  /* background-color: rgba(246, 245, 245, 0.7); */
+  border: solid 1px rgb(139, 139, 139);
+}
+
+.nav_categories p {
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 5vw;
+  font-size: small;
+  padding-top: 4%;
+}
+
+.nav_categories p:hover {
+  color: rgb(143, 36, 127);
+  cursor: pointer;
+}
+
+.nav_categories_br {
+  border-bottom: solid 0.2px rgb(164, 164, 164, 0.5);
+  margin-left: 20px;
+  margin-right: 5px;
+  padding-top: 3px;
+}
+
+.nav_categories_content {
+  display: flex;
+}
+
+.quizz {
+  margin-left: 20px;
+
+  border-radius: 5px;
+}
+
+.msg_acceuil {
+  margin: auto;
+  text-align: center;
+}
+
+.btn {
+  margin: auto;
+  text-align: center;
+  /* margin-top: 3vh; */
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  /* padding: 2vw; */
+}
+
+.bouton {
+  padding: 8px 50px;
+  background-color: rgb(143, 36, 127);
+  color: white;
+  border: 3em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.test01 {
+  align-items: center;
+}

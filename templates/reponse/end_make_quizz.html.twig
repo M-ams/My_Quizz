@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle Categorie
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/crud.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<p>Votre quizz a été créez</p>
+
+				<div class="btn">
+					<a href="{{ path('app_main') }}">
+						<button type="submit" class="bouton">Quitter</button>
+					</a>
+				</div>
+
+			</div>
+		</body>
+
+	{% endblock %}
+

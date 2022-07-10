@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background-color: rgb(160, 209, 220);
+}
+
+.head {
+  text-align: center;
+  margin: auto;
+}
+
+.homeimg {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 25%;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.wrapper {
+  /* display: flex; */
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  max-width: 800px;
+  width: 95%;
+  font: 18px/1.5 sans-serif;
+}
+
+.wrapper code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+}
+
+.container {
+  /* display: flex; */
+  padding: 1.5vw;
+}
+
+.error {
+  padding-top: 1vh;
+  margin: auto;
+  text-align: center;
+  color: redopl;
+}
+
+.input {
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+  margin-left: 8.5vw;
+  margin-right: 8.5vw;
+  text-transform: uppercase;
+  color: rgb(143, 36, 127);
+  padding-bottom: 30px;
+}
+
+.btn {
+  margin: auto;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.bouton {
+  padding: 8px 50px;
+  background-color: rgb(143, 36, 127);
+  color: white;
+  border: 3em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  background-color: rgb(180, 40, 132);
+}
+
+.link {
+  padding-top: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: rgb(143, 36, 127);
+}
+
+.form-control {
+  width: 35%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid rgb(143, 36, 127);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.required {
+  color: rgb(143, 36, 127);
+}
+
+#registration_form_plainPassword {
+  width: 35%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid rgb(143, 36, 127);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+}
+
+#registration_form_email {
+  width: 35%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid rgb(143, 36, 127);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+}
+
+.required {
+  margin: auto;
+  text-align: center;
+}
+
+#registration_form_agreeTerms {
+  margin: auto;
+  text-align: center;
+}

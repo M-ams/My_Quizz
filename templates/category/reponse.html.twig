@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/reponse.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+
+{% block body %}
+	<div class="head">
+		<a href="{{ path('app_main') }}">
+			<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/></a>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			
+
+{% for reponses in reponses %}
+{% if loop.index0 == routeParams.idq %}
+	<div class="reponse">
+		<p>{{ reponses[0].reponse }}</p>
+	</div> 
+{% endif %}
+	
+
+{% endfor %}
+			
+			{% set routeParamsUpdate = routeParams.idq + 1 %}
+			{{ form_start(form2,{action:path('app_category_index', {'id': routeParams.id,'idq': routeParamsUpdate})}) }}
+
+			<div class="btn">
+				{{ form_widget(form2.next, { 'label': 'Suivant' }) }}
+			</div>
+			{# <p>La bonne réponse est {{reponses[routeParams.idq].reponses}}</p> #}
+
+
+			{{ form_end(form2) }}
+
+		</div>
+	</div>
+{% endblock %}

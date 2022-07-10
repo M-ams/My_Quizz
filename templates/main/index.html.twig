@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}myQuizz.fr
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/home.css') }}" type="text/css"/>
+{% endblock stylesheets %}
+
+{% block head %}{% endblock head %}
+
+{% block body %}
+
+	<div class="head">
+		<img src="{{ asset('images/head.png') }}" alt="img quizz.fr" class="homeimg"/>
+	</div>
+
+	<div class="wrapper">
+		<div class="container">
+
+			<nav>
+				<div class="nav_connect">
+					{% if app.user %}
+
+						<p>Hello
+							{{ app.user.email }}</p>
+						<a href="{{path('app_logout')}}">Déconnexion</a>
+
+					{% else %}
+
+						<a href="{{path('app_login')}}">Connexion</a>
+
+					{% endif %}
+				</div>
+				<div class="nav_title">
+
+
+					<p>Catégories :</p>
+				</div>
+				<div class="nav_categories">
+					{% for category in categories %}
+						<div class="nav_categories_content">
+							<p>
+								<a href="{{ path('app_category_index', {'id': category.id,'idq': 0}) }}">{{ category.name }}</a>
+							</p>
+						</div>
+
+						<div class="nav_categories_br"></div>
+					{% endfor %}
+				</div>
+			</div>
+
+		</nav>
+
+		<div class="quizz">
+
+			<div class="msg_acceuil">
+				<p>Bienvenue sur notre Quizz.fr !
+				</p>
+			</div>
+
+
+			<div class="dashboard">
+				<div class="btn">
+				{% if is_granted("ROLE_USER") %}
+					<a href="{{ path('app_category_new') }}">
+						<button type="submit" class="bouton">Créez votre quizz</button>
+					</a>
+					{% if user.id == null %}
+						{% else %}
+
+							<a href="{{ path('app_show_history', {'id': user.id })}}">
+								<button type="submit" class="bouton">Voir votre historique</button>
+							</a>
+					{% endif %}
+				{% endif %}
+				</div>
+{% if is_granted("ROLE_USER") %}
+				<div class="test01">
+					{% for category in categories %}
+						<div class="nav_categories_content">
+
+
+							<p>{{ category.name }}</p>
+						</p>
+
+						<div class="btn">
+							<a href="{{ path('app_category_edit', {'id': category.id}) }}">
+								<button class="bouton">Editer</button>
+							</a>
+						</div>
+					</div>
+
+					<div class="nav_categories_br"></div>
+				{% endfor %}
+{% endif %}
+			</div>
+		</div>
+	</div>
+</div></div>{% endblock %}
